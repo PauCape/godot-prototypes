@@ -9,4 +9,5 @@ uv1_world_triplanar = true
 
 [node name="Ground" type="CSGBox3D"]
 use_collision = true
+collision_layer = 2
 material = SubResource("StandardMaterial3D_yts2b")

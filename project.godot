@@ -14,6 +14,10 @@ config/name="Prototypes"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[editor]
+
+naming/node_name_num_separator=2
+
 [layer_names]
 
 3d_physics/layer_1="detectable"
