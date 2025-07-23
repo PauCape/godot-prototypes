@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://7tweewuh4w7y"]
+
+[ext_resource type="Texture2D" uid="uid://8ljwlc7nve2e" path="res://textures/orange/texture_01.png" id="1_6t72n"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6lwtc"]
+albedo_texture = ExtResource("1_6t72n")
+
+[sub_resource type="SphereMesh" id="SphereMesh_dox3d"]
+material = SubResource("StandardMaterial3D_6lwtc")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_6lu7q"]
+
+[node name="RigidBody3D" type="RigidBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_dox3d")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_6lu7q")

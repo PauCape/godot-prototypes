@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgtm3rib5s6hu"]
+
+[ext_resource type="Texture2D" uid="uid://cv37ms1468niq" path="res://textures/dark/texture_01.png" id="1_fl2ni"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yts2b"]
+albedo_texture = ExtResource("1_fl2ni")
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[node name="CSGBox3D" type="CSGBox3D"]
+use_collision = true
+material = SubResource("StandardMaterial3D_yts2b")
